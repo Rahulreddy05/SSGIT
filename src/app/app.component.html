@@ -4,10 +4,10 @@
   <nav class="navbar navbar-expand-lg navbar-dark black">
       <div class="container" style = "margin-left: -10px;">
           <a class="navbar-brand" href=""><strong>SSGIT</strong></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item" [routerLinkActive]="['active']">
                       <a class="nav-link" href="">Home </a>
@@ -49,7 +49,7 @@
       <!-- Grid column -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold">SSGIT</h6>
-        <p>Along with SSTech LLC mission, a core emphasis is placed on establishing a unique interpersonal relationship with our clients.</p>
+        <p>Along with SSGIT a core emphasis is placed on establishing a unique interpersonal relationship with our clients.</p>
       </div>
       <!-- Grid column -->
 
@@ -59,16 +59,16 @@
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
         <p>
-          <a href="#!">Digital And Creative Services</a>
+          <a href="/services/Digital And Creative Services">Digital And Creative Services</a>
         </p>
         <p>
-          <a href="#!">Application Staffing Services</a>
+          <a href="/services/Application Staffing Services">Application Staffing Services</a>
         </p>
         <p>
-          <a href="#!">Network Infrastructure Staffing Services</a>
+          <a href="/services/Network Infrastructure Staffing Services">Network Infrastructure Staffing Services</a>
         </p>
         <p>
-          <a href="#!">IT Direct Placement Services</a>
+          <a href="/services/IT Direct Placement Services">IT Direct Placement Services</a>
         </p>
       </div>
       <!-- Grid column -->
@@ -79,16 +79,16 @@
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold">Things</h6>
         <p>
-          <a href="#!">About Us</a>
+          <a href="/about-us">About Us</a>
         </p>
         <p>
-          <a href="#!">Profile</a>
+          <a href="/profiles">Profile</a>
         </p>
         <p>
           <a href="#!">Carrers</a>
         </p>
         <p>
-          <a href="#!">Benefits</a>
+          <a href="/benefits">Benefits</a>
         </p>
       </div>
 
